@@ -116,3 +116,14 @@ section {
 	width: 85%;
 }
 
+header a:hover {
+	color: #00B3FF;
+}
+
+header a:active {
+	color: #00B3FF
+}
+
+header a:visited {
+	color: grey;
+}
