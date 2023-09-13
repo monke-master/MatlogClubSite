@@ -1,0 +1,118 @@
+:root {
+	--color-onPrimary: #881800;
+	--color-secondary: #250a03;
+	--color-primary: #e9e5dc;
+}
+
+@font-face {
+	font-family: "CormorantGaramond-Bold";
+	src: url("fonts/CormorantGaramond-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "CormorantGaramond-Medium";
+	src: url("fonts/CormorantGaramond-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CormorantGaramond-Light";
+	src: url("fonts/CormorantGaramond-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "CormorantGaramond-MediumItalic";
+	src: url("fonts/CormorantGaramond-MediumItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+@font-face {
+	font-family: "Ysabeau-Medium";
+	src: url("fonts/YsabeauSC-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+h1 {
+	font-family: "CormorantGaramond-Bold";
+}
+
+h2 {
+	font-family: "CormorantGaramond-Bold";
+}
+
+h3 {
+	font-family: "CormorantGaramond-Medium";
+
+}
+
+a {
+	font-family: "CormorantGaramond-Medium";
+}
+
+p {
+	font-family: "CormorantGaramond-Medium";
+}
+
+aside p {
+	font-family: "Ysabeau-Medium";
+	color: var(--color-primary);
+}
+
+p + img {
+	border: 1px solid var(--color-primary);
+	border-radius: 4px;
+	padding: 5px;
+	width: 200px;
+}
+
+dt ~ dd {
+	font-family: "CormorantGaramond-MediumItalic"
+}
+
+header * {
+	color: var(--color-primary)
+}
+
+header {
+	background: var(--color-onPrimary)
+}
+
+body {
+	background: var(--color-primary)
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	justify-content: flex-start;
+	padding: 16px;
+}
+
+aside {
+	padding: 8px;
+	background-color: var(--color-onPrimary);
+	width: 15%;
+}
+
+article {
+	border: 1px solid var(--color-onPrimary);
+	border-radius: 12px;
+	padding: 8px;
+	margin: 6px 0px 6px 0px
+}
+
+section {
+	width: 85%;
+}
+
