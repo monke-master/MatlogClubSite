@@ -40,6 +40,9 @@
 	font-weight: normal;
 }
 
+html {
+	padding: 0;
+}
 
 
 h1 {
@@ -79,16 +82,31 @@ dt ~ dd {
 	font-family: "CormorantGaramond-MediumItalic"
 }
 
+header {
+	background: var(--color-onPrimary);
+	position: sticky;
+	top: 0;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.1em;
+}
+
+nav {
+	font-size: 1.5em;
+}
+
 header * {
 	color: var(--color-primary)
 }
 
-header {
-	background: var(--color-onPrimary)
+#mainHeader {
+	margin: 0;
 }
 
+
+
 body {
-	background: var(--color-primary)
+	background: var(--color-primary);
 	padding: 0;
 	margin: 0;
 }
@@ -126,4 +144,9 @@ header a:active {
 
 header a:visited {
 	color: grey;
+}
+
+header li {
+	display: inline;
+
 }
