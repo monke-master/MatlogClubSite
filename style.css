@@ -64,6 +64,7 @@ a {
 
 p {
 	font-family: "CormorantGaramond-Medium";
+	font-size: 1.2em;
 }
 
 aside p {
@@ -142,7 +143,7 @@ aside {
 }
 
 article {
-	border: 1px solid var(--color-onPrimary);
+	border: 0.1em solid var(--color-onPrimary);
 	border-radius: 12px;
 	padding: 8px;
 	margin: 6px 0px 6px 0px;
@@ -194,4 +195,16 @@ header li {
 	right: 1em;
 	bottom: 10%;
 	top: 10%;
+}
+
+form *:focus {
+	color: var(--color-onPrimary);
+}
+
+form input, textarea {
+	border: 0.1em solid var(--color-onPrimary);
+}
+
+input::placeholder {
+	color: grey;
 }
