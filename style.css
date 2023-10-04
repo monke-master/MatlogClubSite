@@ -133,8 +133,52 @@ body {
   aside, section {
      width: 100%;
      min-height: 1px;
+}
+
+.burger {
+  display: none; 
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+#toggle {
+  display: none; 
+}
+
+#toggle:checked  .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
-  @media (min-width: 992px) {
+
+  .burger {
+    display: block; 
+  }
+
+  #toggle:checked  .dropdown-content {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
    aside {
      flex: 0 0 15%;
      max-width: 15%;
@@ -143,9 +187,9 @@ body {
      flex: 0 0 80%;
      max-width: 80%;
    }
-  }
+}
 
- aside {
+aside {
 	padding: 8px;
 	background-color: var(--color-onPrimary);
 }
