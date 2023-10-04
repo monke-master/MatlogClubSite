@@ -33,6 +33,17 @@ nav {
   display: block;
 }
 
-.dropdown:active .dropdown-content {
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: green;
+  margin: 5px;
+}
+
+.burger:checked ~ .dropdown-content{
   display: block;
 }
