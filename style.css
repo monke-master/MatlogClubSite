@@ -122,24 +122,32 @@ header * {
 	margin: 0;
 }
 
-
-
 body {
-	background: var(--color-primary);
-	padding: 0;
-	margin: 0;
-}
+     margin: 0;
+  }
+  main {
+     display: flex;
+     flex-wrap: wrap;
+     padding-left:  0.5%;
+  }
+  aside, section {
+     width: 100%;
+     min-height: 1px;
+  }
+  @media (min-width: 992px) {
+   aside {
+     flex: 0 0 15%;
+     max-width: 15%;
+   }
+   section {
+     flex: 0 0 80%;
+     max-width: 80%;
+   }
+  }
 
-main {
-	display: flex;
-	justify-content: flex-start;
-	padding: 16px;
-}
-
-aside {
+ aside {
 	padding: 8px;
 	background-color: var(--color-onPrimary);
-	width: 15%;
 }
 
 article {
@@ -155,9 +163,11 @@ article img {
 	margin-right: 4em;
 }
 
-section {
-	width: 85%;
+aside img {
+	max-width: 90%;
 }
+
+
 
 header a:hover {
 	color: #00B3FF;

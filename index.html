@@ -2,223 +2,210 @@
 <html>
 
 <head>
-	<title>Клуб любителей матлогики</title>
-	<link rel="icon" href="cover.jpg">
-	<link rel="stylesheet" href="style.css">
+  <title>Клуб любителей матлогики</title>
+  <link rel="icon" href="cover.jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
+    <h1 id="mainHeader">Клуб любителей матлогики</h1>
+    <h2>Официальный сайт группы</h2>
+    <h3>Будь как дома, платник!</h3>
+    <nav>
+      <ul>
+        <li><a>Новости</a></li>
+        <li><a>Тексты песен</a></li>
+        <li><a href="https://aleksej1024.github.io/soviet_tunes/">Слушать</a></li>
+      </ul>
+    </nav>
+    <img id="logo" src="cover.jpg" alt="Обложка" height="150" width="200">
 
-	<header>
-		<h1 id="mainHeader">Клуб любителей матлогики</h1>
-		<h2>Официальный сайт группы</h2>
-		<h3>Будь как дома, платник!</h3>
-		<nav>
-			<ul>
-				<li><a>Новости</a></li>
-				<li><a>Тексты песен</a></li>
-				<li><a href="https://aleksej1024.github.io/soviet_tunes/">Слушать</a></li>
-			</ul>
-		</nav>
-		<img id="logo" src="cover.jpg" alt="Обложка" height="150" width="200">
-
-	</header>
-
-
-	<main>
-		
-
-	
-		<section>
-
-			<h2>Новости</h2>
-
-			<article>
-				<h3>Набор в группу</h3>
-				<form>
-					<p>
-						<label for="name_input">Ваше имя:</label>
-						<input type="text" name="name" value="" id="name_input">
-					</p>
-					<p>
-						<label for id="birth_date">Дата рождения:</label>	
-						<input type="date" name="" value="" id="birth_date" max="2004-09-05" min="2000-09-05">
-					</p>
-
-					<fieldset>
-					    <legend>Ваш пол:</legend>
-					    <input type="radio" id="male" name="contact" value="male" checked />
-					    <label for="male">Мужчина</label>
-
-					    <input type="radio" id="female" name="contact" value="female" />
-					    <label for="female">Женщина</label>
-				    </fieldset>
-						
-				
-					<fieldset>
-						<legend>Играю на:</legend>
-
-						<label>
-							<input type="checkbox">
-							Гитара
-						</label>
-						<label>
-							<input type="checkbox">
-							Барабаны
-						</label>
-						<label>
-							<input type="checkbox">
-							Бас
-						</label>
-						<label>
-							<input type="checkbox">
-							Клавиши
-						</label>
-						<label>
-							<input type="checkbox">
-							Духовые
-						</label>
-					</fieldset>
-
-					<p>
-						<label for="about">Расскажите о себе</label><br>
-						<textarea name="about" id="about"rows="7" col="40"></textarea>
-					</p>
-
-					
+  </header>
 
 
-					<p>
-						<label for="phone_input">Мобильный телефон:</label>
-						<input type="tel" name="phone" value="" id="phone_input">
-					</p>
+  <main>
+    <section>
 
-					<p>
-						<label for="email">Почта:</label>
-						<input type="email" name="email" value="" id="email_input" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
-					</p>
+      <h2>Новости</h2>
 
-					<p>
-						<label for="password_input">Секретное слово:</label>
-						<input type="password" name="password" value="" id="password_input" placeholder="Лучший преподаватель" maxlength="6" minlength="6">
-					</p>
-					
-					<p>
-						<label for="audio_input">Прикрепите вашу запись:</label>
-						<input type="file" name="audio_input" value="">
-					</p>
+      <article>
+        <h3>Набор в группу</h3>
+        <form>
+          <p>
+            <label for="name_input">Ваше имя:</label>
+            <input type="text" name="name" value="" id="name_input">
+          </p>
+          <p>
+            <label for id="birth_date">Дата рождения:</label> 
+            <input type="date" name="" value="" id="birth_date" max="2004-09-05" min="2000-09-05">
+          </p>
 
-					<p>
-						<label for="supchik_input">Я подтверждаю, что не супчик:</label>
-						<input type="checkbox" id="supchik_input" name="supchik" value="">
-					</p>
+          <fieldset>
+              <legend>Ваш пол:</legend>
+              <input type="radio" id="male" name="contact" value="male" checked />
+              <label for="male">Мужчина</label>
 
-					<p>
-						<label for="department">Ваша кафедра</label>
-						<select id="department" name="department" required="true">
-							<option value="">-- Выберите кафедру --</option>
-							<option value="gamedev">Геймдев</option>
-							<option value="ippo">ИППО</option>
-							<option value="rosatom">РосАтом</option>
-							<option value="kis">КИС</option>
-							<option value="mosit">МОСИТ</option>
-							<option value="vt">ВТ</option>
-							<option value="oi">Кафедра общей информатики</option>
-						</select>
-					</p>
-
-					
-
-					<button type="submit">Отправить</button>
-
-
-				</form>
-			</article>
-	        
-	        <article>
-
-	        	<h3>Как нас найти?</h3>
-
-	        	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed2a799716512222f4dfcd989b283bb94c907c1fd131bdb7ac12ad54a19e624e&amp;source=constructor" width="930" height="586" frameborder="0"></iframe>
-	        	
-	        </article>
-
-	        <article>
-	        	<h3>Зацените этот нереадбный рисунокт карандашом!</h3>
-	        	<iframe width="560" height="315" src="https://www.youtube.com/embed/gAPQRKoIxek?si=ck9SBWezwONtBtRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	        </article>
-
-			<article>
-				<h3>Группа объявляет о начале своего первого мирового тура!</h3>
-		        <dl>
-		            <dt>1. ИИТ</dt>
-		            <dd>Прог.инж - 01 октября</dd>
-		            <dd>ПМ - 02 октября</dd>
-		            <dd>ПИ - 03 октября</dd>
-		            
-		            <dt>2. ИПТИП</dt>
-		            <dd>ГеоИнформатика - 05 октября</dd>
-		            <dd>Физика - 07 октября</dd>
-		            <dd>Фуллстек - 10 октября</dd>
-
-		            <dt>3. ИКБ</dt>
-		            <dd>Разработка бизнес-приложений - 17 октября</dd>
-		        </dl>
-			</article>
-
-			<article id="tracksArticle">
-				<h3>Опубликован трек-лист альбома <em>Кризис Пивного возраста</em></h3>
-				<img src="cover.jpg" alt="Обложка" height="400" width="550" usemap="#shapes">
-				<map name="shapes">
-		        	<area shape="rect" coords="0, 0, 550, 400" href="cover.jpg" alt="КОбейн">  
-		        </map> 
-				<ol type="I">
-		            <li>Все идут в ВТ</li>
-		            <li>Smells like RS trigger</li>
-		            <li>ВТшная ночь</li>
-		            <li>Магнитная вьюга</li>
-		            <li>Декрет белого генерала</li>
-		            <li>Вектор и комитеты</li>
-		            <li>Группа 422</li>
-		            <li>Армия 5 кафедр</li>
-		            <li>Мультиплексор</li>
-		            <li>Моя курсовая</li>
-		            <li>Берков-аэропорт</li>
-		            <li>Немировская нас связала</li>
-		            <li>На ВТ</li>
-		        </ol>
-		        <p>Ждите новых новостей, берковчане! </p>
-			</article>
-
-		</section>
-
-		<aside>
-			<p>Хочешь сдать матлог на 3, если ничего не знаешь? Читать далее..</p>
-			<img src="graph.png">
-			<p>РАНХиГС вздрогнул. Кудж назвал своего преемника. Им станет...</p>
-			<img src="dz.jpg">
-
-			<p>Не обнаруживается возбуждение в логисиме после 18? Нужен всего лишь старый советский...</p>
-			<img src="trigger.jpg" alt="">
-		</aside>
-		
-	</main>
-
-	<button id="listenBtn">
-		<img src="icon_listen.png" alt="" height="50" width="50">
-	</button>
-
-
-    <footer>
-    	<address>
-    		Связаться с нами вы можете 
-    		<a href="mailto:igor.streshnev2019@yandex.ru">здесь</a>
-    	</address>
-    	<p>© copyright 2077 MonkeMaster</p>
+              <input type="radio" id="female" name="contact" value="female" />
+              <label for="female">Женщина</label>
+            </fieldset>
+            
         
-    </footer>
+          <fieldset>
+            <legend>Играю на:</legend>
+
+            <label>
+              <input type="checkbox">
+              Гитара
+            </label>
+            <label>
+              <input type="checkbox">
+              Барабаны
+            </label>
+            <label>
+              <input type="checkbox">
+              Бас
+            </label>
+            <label>
+              <input type="checkbox">
+              Клавиши
+            </label>
+            <label>
+              <input type="checkbox">
+              Духовые
+            </label>
+          </fieldset>
+
+          <p>
+            <label for="about">Расскажите о себе</label><br>
+            <textarea name="about" id="about"rows="7" col="40"></textarea>
+          </p>
+
+          
 
 
+          <p>
+            <label for="phone_input">Мобильный телефон:</label>
+            <input type="tel" name="phone" value="" id="phone_input">
+          </p>
+
+          <p>
+            <label for="email">Почта:</label>
+            <input type="email" name="email" value="" id="email_input" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+          </p>
+
+          <p>
+            <label for="password_input">Секретное слово:</label>
+            <input type="password" name="password" value="" id="password_input" placeholder="Лучший преподаватель" maxlength="6" minlength="6">
+          </p>
+          
+          <p>
+            <label for="audio_input">Прикрепите вашу запись:</label>
+            <input type="file" name="audio_input" value="">
+          </p>
+
+          <p>
+            <label for="supchik_input">Я подтверждаю, что не супчик:</label>
+            <input type="checkbox" id="supchik_input" name="supchik" value="">
+          </p>
+
+          <p>
+            <label for="department">Ваша кафедра</label>
+            <select id="department" name="department" required="true">
+              <option value="">-- Выберите кафедру --</option>
+              <option value="gamedev">Геймдев</option>
+              <option value="ippo">ИППО</option>
+              <option value="rosatom">РосАтом</option>
+              <option value="kis">КИС</option>
+              <option value="mosit">МОСИТ</option>
+              <option value="vt">ВТ</option>
+              <option value="oi">Кафедра общей информатики</option>
+            </select>
+          </p>
+
+          
+
+          <button type="submit">Отправить</button>
+
+
+        </form>
+      </article>
+          
+          <article>
+
+            <h3>Как нас найти?</h3>
+
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed2a799716512222f4dfcd989b283bb94c907c1fd131bdb7ac12ad54a19e624e&amp;source=constructor" width="930" height="586" frameborder="0"></iframe>
+            
+          </article>
+
+          <article>
+            <h3>Зацените этот нереадбный рисунокт карандашом!</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gAPQRKoIxek?si=ck9SBWezwONtBtRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </article>
+
+      <article>
+        <h3>Группа объявляет о начале своего первого мирового тура!</h3>
+            <dl>
+                <dt>1. ИИТ</dt>
+                <dd>Прог.инж - 01 октября</dd>
+                <dd>ПМ - 02 октября</dd>
+                <dd>ПИ - 03 октября</dd>
+                
+                <dt>2. ИПТИП</dt>
+                <dd>ГеоИнформатика - 05 октября</dd>
+                <dd>Физика - 07 октября</dd>
+                <dd>Фуллстек - 10 октября</dd>
+
+                <dt>3. ИКБ</dt>
+                <dd>Разработка бизнес-приложений - 17 октября</dd>
+            </dl>
+      </article>
+
+      <article id="tracksArticle">
+        <h3>Опубликован трек-лист альбома <em>Кризис Пивного возраста</em></h3>
+        <img src="cover.jpg" alt="Обложка" height="400" width="550" usemap="#shapes">
+        <map name="shapes">
+              <area shape="rect" coords="0, 0, 550, 400" href="cover.jpg" alt="КОбейн">  
+            </map> 
+        <ol type="I">
+                <li>Все идут в ВТ</li>
+                <li>Smells like RS trigger</li>
+                <li>ВТшная ночь</li>
+                <li>Магнитная вьюга</li>
+                <li>Декрет белого генерала</li>
+                <li>Вектор и комитеты</li>
+                <li>Группа 422</li>
+                <li>Армия 5 кафедр</li>
+                <li>Мультиплексор</li>
+                <li>Моя курсовая</li>
+                <li>Берков-аэропорт</li>
+                <li>Немировская нас связала</li>
+                <li>На ВТ</li>
+            </ol>
+            <p>Ждите новых новостей, берковчане! </p>
+      </article>
+
+    </section>
+
+    <aside>
+      <p>Хочешь сдать матлог на 3, если ничего не знаешь? Читать далее..</p>
+      <img src="graph.png">
+      <p>РАНХиГС вздрогнул. Кудж назвал своего преемника. Им станет...</p>
+      <img src="dz.jpg">
+
+      <p>Не обнаруживается возбуждение в логисиме после 18? Нужен всего лишь старый советский...</p>
+      <img src="trigger.jpg" alt="">
+    </aside>
+
+
+    
+  </main>
 </body>
+
+
+
+
+
 
 </html>
