@@ -151,8 +151,14 @@ body {
   display: none; 
 }
 
-#toggle:checked  .dropdown-content {
-  display: block;
+.nav-links {
+	flex-basis: auto;
+	flex-grow: 1;
+}
+
+#toggle:checked ~ .nav-links {
+  	display: flex;
+    flex-direction: column;
 }
 
 .dropdown-content {
@@ -173,8 +179,9 @@ body {
     display: block; 
   }
 
-  #toggle:checked  .dropdown-content {
-    display: block;
+  #toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -186,6 +193,10 @@ body {
    section {
      flex: 0 0 80%;
      max-width: 80%;
+   }
+   .nav-links {
+   	flex-basis: auto;
+	flex-grow: 1;
    }
 }
 
