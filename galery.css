@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    margin: 12px 0px;
+    flex-wrap: wrap;
+}
+.container > div {
+    padding: .5em;
+    color: white;
+}
+
+@media(max-width: 1440px) {
+  img {
+      max-width: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container > div {
+        min-width: 100%;
+    }
+
+    .container.small-blocks > div {
+        min-width: 41%;
+    }
+    img {
+      max-width: 50%;
+    }
+
+
+}

@@ -200,6 +200,29 @@ body {
    }
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: 100%;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gallery-item {
+    width: 33.33%;
+  }
+}
+
 aside {
 	padding: 8px;
 	background-color: var(--color-onPrimary);
