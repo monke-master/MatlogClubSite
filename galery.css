@@ -25,6 +25,36 @@
     img {
       max-width: 50%;
     }
-
-
 }
+
+.card {
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes fade-out {
+    from {
+      display: none;
+    }
+    to {
+        display: flex;
+    }
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,185,0.2805497198879552) 16%, rgba(0,212,255,1) 100%);
+}
+
+
+.image:hover {
+    opacity: 0;
+}
+
