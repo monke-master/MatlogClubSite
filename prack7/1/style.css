@@ -1,0 +1,88 @@
+:root {
+    --degree-rotation-start: -20deg;
+
+}
+
+body {
+    background: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(246, 216, 221), rgb(255, 255, 255) 45%, rgb(255, 255, 255), rgb(255, 255, 255) 55%, rgb(246, 216, 221), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
+}
+
+.card {
+    margin: 15%;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    transform: rotateZ(var(--degree-rotation-start));
+
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+  }
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .card:hover .left-square {
+    animation: moveLeftSquare 2s infinite alternate;
+    opacity: 1;
+  }
+
+  .card:hover .right-square {
+    animation: moveRightSquare 2s infinite alternate;
+    opacity: 1;
+  }
+
+  
+  .card:hover .content {
+    transform: rotateZ(0deg);
+  }
+
+  .card:hover {
+    transform: rotateZ(0deg);
+  }
+  
+  @keyframes moveLeftSquare {
+    0% {
+      transform: translate(-200%, -400%);
+    }
+    100% {
+      transform: translate(-200%, 400%);
+    }
+  }
+
+  @keyframes moveRightSquare {
+    0% {
+      transform: translate(200%, 400%);
+    }
+    100% {
+      transform: translate(200%, -400%);
+    }
+  }
+
+
+  
+  .left-square {
+    opacity: 0;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+  }
+
+.right-square {
+    opacity: 0;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+}
