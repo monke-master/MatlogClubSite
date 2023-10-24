@@ -1,0 +1,58 @@
+  
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+
+.name {
+    grid-area: name;
+}
+
+.surname {
+    grid-area: surname;
+}
+
+.email {
+    grid-area: email;
+}
+
+
+.phone {
+    grid-area: phone;
+}
+
+.institute {
+    grid-area: institute;
+}
+
+.header {
+    grid-area: header;
+}
+
+@media (min-width: 320px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "name"
+        "surname"
+        "email"
+        "phone"
+        "institute"
+        ;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "header header"
+        "name surname"
+        "email phone"
+        "institute institute"
+    }
+
+}
+  

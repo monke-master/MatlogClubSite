@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    margin: 0 auto;
+    font:
+      1.2em Helvetica,
+      arial,
+      sans-serif;
+}
+  
+.wrapper > * {
+    border: 2px solid #f08c00;
+    background-color: #ffec99;
+    border-radius: 5px;
+    padding: 10px;
+}
+  
+  
+.wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "block1 block1 block2 block3"
+      "block4 block5 block2 block6"
+      "block4 block7 block7 block7";
+}
+
+
+
+.wrapper div:hover {
+    animation: hover-anim 1s ease-in;
+}
+
+@keyframes hover-anim {
+    0% {
+        background-color: #ffec99;
+    }
+    100% {
+        background-color: #f08c00;
+    }
+}
+
+.block1 {
+    grid-area: block1;
+}
+
+.block2 {
+    grid-area: block2;
+}
+
+.block3 {
+    grid-area: block3;
+}
+
+.block4 {
+    grid-area: block4;
+}
+
+.block5 {
+    grid-area: block5;
+}
+
+.block6 {
+    grid-area: block6;
+}
+
+.block7 {
+    grid-area: block7;
+}

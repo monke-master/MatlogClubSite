@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    margin: 0 auto;
+    font:
+      1.2em Helvetica,
+      arial,
+      sans-serif;
+}
+  
+.wrapper > * {
+    border: 2px solid #f08c00;
+    background-color: #ffec99;
+    border-radius: 5px;
+    padding: 10px;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.main-head {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+.side {
+    grid-area: sidebar;
+}
+.ad {
+    grid-area: ad;
+}
+.main-footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about-us"
+      "contact-us"
+      "partners";
+}
+
+.about-us {
+    grid-area: about-us;
+}
+
+.about-us {
+    grid-area: contact-us;
+}
+
+.partners {
+    grid-area: partners;
+}
+  
+.wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "sidebar"
+      "ad"
+      "footer";
+}
+  
+@media (min-width: 320px) {
+    .wrapper {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas:
+        "header  header"
+        "nav     nav"
+        "sidebar content"
+        "ad      ad"
+        "footer footer";
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    .main-footer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "about-us"
+        "contact-us"
+        "partners";
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas:
+        "header header  header"
+        "nav    nav nav"
+        "sidebar    content content"
+        "ad footer  footer";
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "about-us contact-us"
+        "partners";
+    }
+}
+  
+@media (min-width: 1024px) {
+    .wrapper {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas:
+        "header header  header"
+        "nav    content sidebar"
+        "nav    content ad"
+        "footer footer  footer";
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    .main-footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "about-us contact-us partners"
+    }
+}
