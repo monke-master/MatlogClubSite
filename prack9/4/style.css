@@ -1,0 +1,6 @@
+
+.drawing {
+  size: 50px;
+  position: fixed;
+  pointer-events: none;
+}
