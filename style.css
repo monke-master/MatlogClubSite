@@ -156,6 +156,8 @@ body {
 	flex-grow: 1;
 }
 
+
+
 #toggle:checked ~ .nav-links {
   	display: flex;
     flex-direction: column;
@@ -385,29 +387,7 @@ input::placeholder {
 }
 
 
-.video-container {
-	display: inline-block;
-}
 
-.video-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-	display: none;
-}
-  
-.video-container:hover .video-overlay {
-	display: block;
-}
-  
-.video-overlay p {
-	color: white;
-	text-align: center;
-	padding: 10px;
-}
 
 
 

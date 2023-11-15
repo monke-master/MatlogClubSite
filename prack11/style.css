@@ -1,0 +1,43 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.cart .filter {
+  margin-bottom: 20px;
+}
+
+.cart .filter label,
+.cart .filter input,
+.cart .filter button {
+  margin-right: 10px;
+}

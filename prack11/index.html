@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин "Уголок Беркова"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Магазин "Уголок Беркова"</h1>
+    <div class="items">
+      <div class="item">
+        <input class="title" placeholder="Название">
+        <input class="price" placeholder="Цена">
+        <input type="number" class="quantity" placeholder="Количество">
+        <button id="add-btn" class="add-to-cart">Добавить</button>       
+      </div>
+    </div>
+    <div class="filter">
+      <label for="min-price">Мин. цена:</label>
+      <input type="number" id="min-price" placeholder="Мин. цена">
+      <label for="max-price">Макс. цена:</label>
+      <input type="number" id="max-price" placeholder="Макс. цена">
+      <button id="filter-btn">Фильтровать</button>
+      <button id="cancel-filter-btn">Отменить</button> 
+    </div>
+    <div> 
+      <button id="sort-asc">По возрастанию</button>
+      <button id="sort-desc">По убыванию</button>
+    </div>
+    <div class="cart">
+      <h2>Корзина</h2>
+      <ul class="cart-list">
+        
+      </ul>
+      <button class="clear-cart">Очистить</button>
+    </div>
+
+    <div class="cart-summary">
+      <p>Total: <span id="total-amount">₪0.00</span></p>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
