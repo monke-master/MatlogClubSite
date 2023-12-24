@@ -1,0 +1,27 @@
+.notifications-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+}
+
+.notification {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-button:hover {
+  color: #f00;
+}

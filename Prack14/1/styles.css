@@ -1,0 +1,29 @@
+#contents {
+  padding: 20px;
+  border: 1px solid #e074ef;
+  font-family: Arial, sans-serif;
+  width: 600px;
+  height: 100px;
+  border-radius: 20px 20px 150px 150px;
+  background-color: plum;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contents em {
+  text-align: center;
+}
+
+#contents a {
+  color: #3c00ff;
+  text-decoration: none;
+}
+
+#contents a:hover {
+  text-decoration: underline;
+}
+
+
+#contents a i {
+  margin-right: 5px;
+}

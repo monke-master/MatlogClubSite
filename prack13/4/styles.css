@@ -1,0 +1,25 @@
+.captcha {
+    text-align: center;
+    margin: 50px;
+  }
+  
+.captcha-text {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+input[type="text"] {
+padding: 10px;
+font-size: 16px;
+}
+
+button {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.error-message {
+color: red;
+margin-top: 10px;
+}

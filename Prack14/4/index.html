@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Практика 5</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="products">
+      <h2>Товары</h2>
+      <div id="products-list" class="list">
+        <div class="product" draggable="true" data-price="200">
+          <div class="content">
+            <h3>Сало белорусское</h3>
+            <p>Цена: 200 руб.</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="90">
+          <div class="content">
+            <h3>Брага донбасская</h3>
+            <p>Цена: 90 руб.</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="800">
+          <div class="content">
+            <h3>Пармезан луганский</h3>
+            <p>Цена: 800 руб.</p>
+          </div>
+        </div>
+        <div class="product" draggable="true" data-price="400">
+          <div class="content">
+            <h3>Конфеты рошен</h3>
+            <p>Цена: 400 руб.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Корзина</h2>
+      <div id="cart-list" class="list droppable"></div>
+      <p id="total-price">Итоговая стоимость: 0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

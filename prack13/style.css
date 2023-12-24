@@ -1,0 +1,21 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.parallax-container {
+  height: 100vh; /* Высота контейнера параллакса */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-content {
+  height: 300vh; /* Высота содержимого с параллаксом */
+  background-image: url('your-background-image.jpg'); /* Замените на вашу картинку */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Стили для содержимого с параллаксом (текст, изображения и т. д.) */

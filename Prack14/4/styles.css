@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+.container {
+	display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products,
+.cart {
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Arial";
+}
+
+.list {
+  padding: 0;
+}
+
+/* ... (ваш предыдущий CSS)... */
+
+.products .list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #696969;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.product .content {
+  pointer-events: auto;
+}
+
+/* ... (ваш предыдущий CSS)... */
+
+
+.product h3,
+.product p {
+  margin: 5px 0;
+}
+
+.cart {
+  background-color: #ffffff;
+  color: black;
+}
+
+.cart .list {
+	min-height: 3px;
+	border: 2px dashed #fff;
+	padding: 10px;
+	margin-top: 25px;
+    color: black;
+    font-family: "Arial";
+}
+
+#total-price {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.droppable {
+  border: 2px dashed #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.droppable-hover {
+  background-color: #9AA7B7;
+}
